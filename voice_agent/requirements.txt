@@ -1,0 +1,31 @@
+# VoiceAgent — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core UI ───────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── STT (choose one) ──────────────────────────────────────────────────────────
+# Option A: Local Whisper (CPU-friendly, no API key needed)
+faster-whisper>=1.0.0
+
+# Option B: Groq API (free tier, very fast)
+# groq>=0.9.0
+
+# Option C: OpenAI Whisper API
+# openai>=1.30.0
+
+# ── LLM ───────────────────────────────────────────────────────────────────────
+# For Ollama (local) — just run `ollama serve` and `ollama pull llama3.2`
+# No Python package needed; we use requests.
+
+# For LM Studio — uses openai SDK with local base_url
+# openai>=1.30.0
+
+# For OpenAI API
+# openai>=1.30.0
+
+# ── HTTP ──────────────────────────────────────────────────────────────────────
+requests>=2.32.0
+
+# ── Audio processing ──────────────────────────────────────────────────────────
+# faster-whisper handles audio natively; no extra audio libs needed for basic use
